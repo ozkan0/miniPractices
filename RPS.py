@@ -11,6 +11,7 @@ def skorinfo():
     print(f'Skor: Siz {userscore} - {compscore} PC')
 
 print("\nSıranızı oynarken Taş için t, Kağıt için k, Makas için m tuşuna basmalısınız.\n")
+#loop until certain amount of score diff
 while fark != 3:
     compinput = random.choice(['t','k','m'])
     userinput = input("Taş, Kağıt, Makas: ")
@@ -29,6 +30,8 @@ while fark != 3:
         userscore += 1
         skorinfo()
     fark=abs(userscore-compscore)
+
+#inform who won the game
 if compscore > userscore:
     print(f'\nBilgisayar {compscore} - {userscore} kazandı!')
 elif compscore < userscore:
