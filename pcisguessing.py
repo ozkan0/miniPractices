@@ -1,4 +1,4 @@
-# @author dono
+# @author dono/ozkan0
 # tr, bilgisayar, tutulan sayıyı tahmin ediyor
 # en, computer guessing the set number
 import random
