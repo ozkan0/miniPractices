@@ -1,3 +1,5 @@
+# @author dono/ozkan0
+# tr, basit ürün stok yönetim arayüzü
 stok={}
 satilanlar=[]
 def stok_ekle():
@@ -35,7 +37,7 @@ def gun_sonu():
     
 def menu():
     while True:
-        secim = input("\nMarket yönetim sistemine hoşgeldiniz.\n1: Stok girişi yap\n2: Ürün satışı gir\n3: Günün özetini al\nq: Çıkış yap\n")
+        secim = input("\Stok yönetim sistemine hoşgeldiniz.\n1: Stok girişi yap\n2: Ürün satışı gir\n3: Günün özetini al\nq: Çıkış yap\n")
         if secim == "1":
             stok_ekle()
         elif secim == "2":
